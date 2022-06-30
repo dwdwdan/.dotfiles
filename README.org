@@ -1,0 +1,8 @@
+#+TITLE: My Dotfiles
+This is a repo for my dotfiles. I currently only have qtile and bash configured here, but I have a seperate repo ([[https:github.com/dwdwdan/.emacs.gnu][dwdwdan/.emacs.gnu]]) for my emacs configuration. The repo is designed to be installed with GNU Stow, so if you have that installed you should be able to run
+
+#+begin_example
+$ stow --target=$HOME .
+#+end_example
+
+from inside the repository. It may throw errors if your existing dotfiles have the same name (which will probably be the case). In this case, simply delete/rename the ones that currently exist and run the command again.
