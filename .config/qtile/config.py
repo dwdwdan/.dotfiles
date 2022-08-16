@@ -118,6 +118,12 @@ for i in groups:
                 [mod, "shift"],
                 i.name,
                 lazy.window.togroup(i.name, switch_group=False),
+                desc="Move focused window to group {}".format(i.name),
+            ),
+            Key(
+                [mod, "control"],
+                i.name,
+                lazy.window.togroup(i.name, switch_group=True),
                 desc="Switch to & move focused window to group {}".format(i.name),
             ),
             # Or, use below if you prefer not to switch to that group.
