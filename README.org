@@ -6,3 +6,8 @@ $ stow --target=$HOME .
 #+end_example
 
 from inside the repository. It may throw errors if your existing dotfiles have the same name (which will probably be the case). In this case, simply delete/rename the ones that currently exist and run the command again.
+
+* TODOs
+** TODO Fix KDE Connect Slideshow Pointer
+At the moment, if a window isn't full screen, the slideshow pointer acts as if it were a tiling window, meaning only half the screen is used.
+  
