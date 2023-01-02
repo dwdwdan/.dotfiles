@@ -19,3 +19,5 @@ alias gc="git commit"
 alias websync="rsync -rLK ~/website/ server:/var/www/personal"
 
 alias q="exit"
+
+alias activate="source env/bin/activate"
