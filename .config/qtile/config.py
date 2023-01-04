@@ -37,6 +37,7 @@ import subprocess
 mod = "mod4"
 terminal = guess_terminal()
 runlauncher = "rofi -show drun -m \"primary\""
+browser = "firefox"
 
 @hook.subscribe.startup_once
 def start_once():
@@ -96,8 +97,8 @@ keys = [
 
 
     Key([mod], "e", lazy.spawn("emacsclient -c -n"), desc="Spawn Emacsclient"),
-    Key([mod], "m", lazy.spawn("firefox outlook.com"), desc="Open Outlook Web"),
-    Key([mod], "w", lazy.spawn("firefox"), desc="Spawn Firefox"),
+    Key([mod], "m", lazy.spawn(browser + " outlook.com"), desc="Open Outlook Web"),
+    Key([mod], "w", lazy.spawn(browser), desc="Spawn Browser"),
     Key([mod], "p", lazy.spawn("rofi -show p -modi \"p:rofi-power-menu --choices=logout/suspend/reboot/shutdown --no-symbols\""), desc="Spawn Emacsclient"),
 ]
 
