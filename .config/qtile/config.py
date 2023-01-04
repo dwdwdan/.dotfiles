@@ -185,15 +185,6 @@ screens = [
                 ),
                 widget.Sep(),
 
-                widget.Maildir(
-                    maildir_path="~/.mail/personal",
-                    sub_folders=[{
-                        'label': '🖂',
-                        'path': 'Inbox'}],
-                    mouse_callbacks={
-                        'Button1': lazy.spawn("emacsclient -c -n -e (mu4e)")},
-                ),
-                widget.Sep(),
                 widget.Battery(
                     format='🔋: {percent:2.0%} {hour:d}:{min:02d}'
                 ),
