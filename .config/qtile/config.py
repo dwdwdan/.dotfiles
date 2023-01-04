@@ -98,6 +98,7 @@ keys = [
 
     Key([mod], "e", lazy.spawn("emacsclient -c -n"), desc="Spawn Emacsclient"),
     Key([mod], "m", lazy.spawn(browser + " outlook.com"), desc="Open Outlook Web"),
+    Key([mod], "c", lazy.spawn(browser + " canvas.bham.ac.uk"), desc="Open Canvas"),
     Key([mod], "w", lazy.spawn(browser), desc="Spawn Browser"),
     Key([mod], "p", lazy.spawn("rofi -show p -modi \"p:rofi-power-menu --choices=logout/suspend/reboot/shutdown --no-symbols\""), desc="Spawn Emacsclient"),
 ]
