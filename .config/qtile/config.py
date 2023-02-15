@@ -97,6 +97,7 @@ keys = [
 
 
     Key([mod], "a", lazy.spawn("pavucontrol"), desc="Open Pavucontrol (audio panel)"),
+    Key([mod], "f", lazy.spawn("nautilus"), desc="Open Nautilus (file browser)"),
     Key([mod], "e", lazy.spawn("emacsclient -c -n"), desc="Spawn Emacsclient"),
     Key([mod], "m", lazy.spawn(browser + " outlook.com"), desc="Open Outlook Web"),
     Key([mod], "c", lazy.spawn(browser + " canvas.bham.ac.uk"), desc="Open Canvas"),
