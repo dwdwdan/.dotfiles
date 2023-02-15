@@ -38,6 +38,7 @@ mod = "mod4"
 terminal = guess_terminal()
 runlauncher = "rofi -show drun -m \"primary\""
 browser = "firefox"
+powermenu = "rofi -show p -modi \"p:rofi-power-menu --choices=logout/suspend/reboot/shutdown --no-symbols\""
 
 @hook.subscribe.startup_once
 def start_once():
@@ -103,7 +104,7 @@ keys = [
     Key([mod], "c", lazy.spawn(browser + " canvas.bham.ac.uk"), desc="Open Canvas"),
     Key([mod], "o", lazy.spawn(browser + " office.com"), desc="Open Microsoft 365"),
     Key([mod], "w", lazy.spawn(browser), desc="Spawn Browser"),
-    Key([mod], "p", lazy.spawn("rofi -show p -modi \"p:rofi-power-menu --choices=logout/suspend/reboot/shutdown --no-symbols\""), desc="Spawn Emacsclient"),
+    Key([mod], "p", lazy.spawn(powermenu), desc="Open Power Menu"),
 ]
 
 groups = [Group(i) for i in "123456789"]
