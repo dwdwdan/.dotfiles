@@ -105,6 +105,7 @@ keys = [
     Key([mod], "m", lazy.spawn(browser + " outlook.com"), desc="Open Outlook Web"),
     Key([mod], "c", lazy.spawn(browser + " canvas.bham.ac.uk"), desc="Open Canvas"),
     Key([mod], "o", lazy.spawn(browser + " office.com"), desc="Open Microsoft 365"),
+    Key([mod, "shift"], "w", lazy.spawn(browser + " web.whatsapp.com"), desc="Open Whatsapp Web"),
     Key([mod], "w", lazy.spawn(browser), desc="Spawn Browser"),
     Key([mod], "p", lazy.spawn(powermenu), desc="Open Power Menu"),
 ]
