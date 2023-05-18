@@ -74,6 +74,8 @@ keys = [
 
     Key([mod], "o", lazy.next_screen(), desc="Switch Screen"),
 
+    Key([mod, "shift"], "f", lazy.window.toggle_floating(), desc="Toggle Floating"),
+
 
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     # Toggle between different layouts as defined below
