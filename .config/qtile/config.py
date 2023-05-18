@@ -107,6 +107,7 @@ keys = [
     Key([mod], "o", lazy.spawn(browser + " office.com"), desc="Open Microsoft 365"),
     Key([mod, "shift"], "w", lazy.spawn(browser + " web.whatsapp.com"), desc="Open Whatsapp Web"),
     Key([mod], "w", lazy.spawn(browser), desc="Spawn Browser"),
+    Key([mod], "s", lazy.spawn("flatpak run com.spotify.Client"), desc="Spawn Spotify"),
     Key([mod], "p", lazy.spawn(powermenu), desc="Open Power Menu"),
 ]
 
