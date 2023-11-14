@@ -9,6 +9,7 @@ alias kc="~/scripts/keyboardConfig/script"
 alias v="nvim"
 alias e="/usr/local/bin/emacsclient -t"
 alias E="emacsclient -c -n"
+alias cb="flatpak run app.getclipboard.Clipboard"
 
 
 alias g="git"
