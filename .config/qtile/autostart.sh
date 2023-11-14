@@ -8,4 +8,4 @@ dunst &
 numlockx on &
 
 
-emacs --with-profile gnu --daemon &
+emacs --daemon &
