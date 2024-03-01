@@ -192,6 +192,11 @@ screens = [
                 widget.Spacer(),
                 #widget.TextBox("default config", name="default"),
                 #widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                widget.Mpd2(
+                    status_format="{play_status} {title} ({artist})",
+                ),
+                widget.Spacer(),
+
                 widget.OpenWeather(
                     location="Selly Oak,GB",
                     format='{icon}: {main_temp}°{units_temperature}',
