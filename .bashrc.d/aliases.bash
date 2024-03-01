@@ -22,3 +22,7 @@ alias websync="rsync -rLK ~/website/ server:/var/www/personal"
 alias q="exit"
 
 alias activate="source env/bin/activate"
+
+# Latex things
+alias todos="grep 'TODO Warning' main.log"
+alias todocnt="todos | wc -l"
